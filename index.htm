@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurassic Park - Retro 1993 System</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section id="navbar">
+            <nav class="nav-container">
+                <div class="logo-box">
+                    <img src="img/default.png" alt="Jurassic Park Logo" class="nav-logo">
+                    <div class="retro-title-box">
+                        <span class="logo-text">JURASSIC PARK</span>
+                        <span class="system-tag">[SYS_VER_1993.4]</span>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#intro">&gt; INTRO</a></li>
+                    <li><a href="#atraction">&gt; ATTRACTIONS</a></li>
+                    <li><a href="#map">&gt; MAP</a></li>
+                    <li><a href="#how-it-start">&gt; HISTORY</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section id="hero">
+            <div class="terminal-header-bar">
+                <span class="terminal-dot red-dot"></span>
+                <span class="terminal-dot yellow-dot"></span>
+                <span class="terminal-dot green-dot"></span>
+                <span class="terminal-title">INGEN_TERMINAL // ISLA_NUBLAR_MAIN_SERVER</span>
+            </div>
+            
+            <div class="hero-image-wrapper">
+                <div class="retro-img-frame">
+                    <img src="img/default.png" alt="Jurassic Park Header" class="hero-img">
+                </div>
+            </div>
+
+            <div class="hero-content">
+                <div class="blink-tag">&gt;&gt;&gt; SYSTEM WARNING: SECURITY FENCES ACTIVE &lt;&lt;&lt;</div>
+                <h1 class="hero-title">WELCOME TO JURASSIC PARK</h1>
+                <p class="hero-subtitle">AN ADVENTURE 65 MILLION YEARS IN THE MAKING // EST. 1993</p>
+                <div class="hero-buttons">
+                    <a href="#atraction" class="btn btn-primary">[ EXPLORE PARK ]</a>
+                    <a href="#map" class="btn btn-outline">[ ACCESS MAP ]</a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section id="intro" class="section-container">
+            <div class="retro-window">
+                <div class="window-titlebar">
+                    <span>FILE: /DOCS/ISLA_NUBLAR_OVERVIEW.TXT</span>
+                    <span class="window-controls">[X]</span>
+                </div>
+                <div class="window-content">
+                    <div class="intro-grid">
+                        <div class="intro-text-card">
+                            <span class="tag">// ARCHIVE_ID: 1993_01</span>
+                            <h2>Life Finds A Way</h2>
+                            <p class="mono-text">Located 120 miles off the coast of Costa Rica, Isla Nublar houses InGen's biological reserve of cloned prehistoric fauna. Utilizing amphibian DNA to bridge genetic gaps, dinosaur cloning achieved reality in 1993.</p>
+                            
+                            <div class="retro-stat-grid">
+                                <div class="stat-item">
+                                    <span class="stat-number">10,000+</span>
+                                    <span class="stat-label">ACRES WILDERNESS</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">15+</span>
+                                    <span class="stat-label">SPECIES CLONED</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">10,000V</span>
+                                    <span class="stat-label">FENCE VOLTAGE</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">24/7</span>
+                                    <span class="stat-label">SERVER MONITOR</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="intro-img-card">
+                            <div class="retro-frame">
+                                <img src="img/Gate_Entrance_29.JPG.webp" alt="Jurassic Park Gate" class="feature-img">
+                                <div class="frame-label">CAM_01: MAIN GATE</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="atraction" class="section-container bg-darker">
+            <div class="section-header">
+                <span class="tag">// SECTOR_SELECTION</span>
+                <h2>PARK ATTRACTIONS</h2>
+                <div class="retro-line"></div>
+            </div>
+            
+            <div class="attraction-grid">
+                <div class="retro-card">
+                    <div class="card-header">
+                        <span class="cam-code">CAM_02</span>
+                        <span class="danger-badge">[ HAZARD: LEVEL 5 ]</span>
+                    </div>
+                    <div class="card-img-wrapper">
+                        <img src="img/tyrannosaurusrex-01.jpg" alt="T-Rex Kingdom" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3>T-REX KINGDOM</h3>
+                        <p class="mono-text">Witness the legendary Tyrannosaurus Rex in her enclosure. Monitored via 20-foot concrete security fences.</p>
+                        <a href="#map" class="retro-btn-sm">&gt; LOCATE SECTOR</a>
+                    </div>
+                </div>
+
+                <div class="retro-card">
+                    <div class="card-header">
+                        <span class="cam-code">CAM_03</span>
+                        <span class="danger-badge">[ DANGER: HIGH ]</span>
+                    </div>
+                    <div class="card-img-wrapper">
+                        <img src="img/default.png" alt="Velociraptor Paddock" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3>VELOCIRAPTOR PADDOCK</h3>
+                        <p class="mono-text">High-security containment zone for pack hunters. Authorized Personnel Only. Keep perimeter clear.</p>
+                        <a href="#map" class="retro-btn-sm">&gt; LOCATE SECTOR</a>
+                    </div>
+                </div>
+
+                <div class="retro-card">
+                    <div class="card-header">
+                        <span class="cam-code">CAM_04</span>
+                        <span class="danger-badge info">[ TOUR: ACTIVE ]</span>
+                    </div>
+                    <div class="card-img-wrapper">
+                        <img src="img/default.png" alt="Gyrosphere Safari" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3>GYROSPHERE SAFARI</h3>
+                        <p class="mono-text">Self-guided electric tour through herbivore valley featuring Triceratops and Brachiosaurus.</p>
+                        <a href="#map" class="retro-btn-sm">&gt; LOCATE SECTOR</a>
+                    </div>
+                </div>
+
+                <div class="retro-card">
+                    <div class="card-header">
+                        <span class="cam-code">CAM_05</span>
+                        <span class="danger-badge">[ HAZARD: LEVEL 3 ]</span>
+                    </div>
+                    <div class="card-img-wrapper">
+                        <img src="img/default.png" alt="Dilophosaurus Enclosure" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3>DILOPHOSAURUS PADDOCK</h3>
+                        <p class="mono-text">Observe venomous spitter species from inside climate-controlled observation bunkers.</p>
+                        <a href="#map" class="retro-btn-sm">&gt; LOCATE SECTOR</a>
+                    </div>
+                </div>
+
+                <div class="retro-card">
+                    <div class="card-header">
+                        <span class="cam-code">CAM_06</span>
+                        <span class="danger-badge info">[ HERBIVORE ZONE ]</span>
+                    </div>
+                    <div class="card-img-wrapper">
+                        <img src="img/default.png" alt="Triceratops Territory" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3>TRICERATOPS TERRITORY</h3>
+                        <p class="mono-text">Open field sanctuary allowing close inspection of InGen's three-horned herbivore herds.</p>
+                        <a href="#map" class="retro-btn-sm">&gt; LOCATE SECTOR</a>
+                    </div>
+                </div>
+
+                <div class="retro-card">
+                    <div class="card-header">
+                        <span class="cam-code">CAM_07</span>
+                        <span class="danger-badge">[ AIRSPACE SECURE ]</span>
+                    </div>
+                    <div class="card-img-wrapper">
+                        <img src="img/default.png" alt="Aviary Dome" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3>AVIARY PADDOCK</h3>
+                        <p class="mono-text">Reinforced mesh dome housing Pteranodons above the canyon river system.</p>
+                        <a href="#map" class="retro-btn-sm">&gt; LOCATE SECTOR</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="map" class="section-container">
+            <div class="section-header">
+                <span class="tag">// GRID_MONITOR</span>
+                <h2>ISLA NUBLAR RADAR MAP</h2>
+                <div class="retro-line"></div>
+            </div>
+            
+            <div class="retro-map-box">
+                <div class="map-img-container">
+                    <img src="img/isla_nublar_map.png" alt="Isla Nublar Tactical Map" class="map-img">
+                </div>
+                <div class="retro-terminal-status">
+                    <div class="terminal-log">&gt; MONITORING ALL FENCE GRIDS (ISLA NUBLAR OPERATIONAL STATUS)...</div>
+                    <div class="terminal-log">&gt; GRID 01: [ONLINE] - VISITOR CENTER & MAIN LABS</div>
+                    <div class="terminal-log alert-log">&gt; GRID 02: [ONLINE] - T-REX ENCLOSURE (10,000V ACTIVE)</div>
+                    <div class="terminal-log alert-log">&gt; GRID 03: [ONLINE] - RAPTOR PADDOCK (HIGH SECURITY)</div>
+                    <div class="terminal-log info-log">&gt; GRID 04: [ONLINE] - HERBIVORE PLAINS & SAFARI ROUTE</div>
+                    <div class="terminal-log alert-log">&gt; GRID 05: [ONLINE] - DILOPHOSAURUS PADDOCK</div>
+                    <div class="terminal-log info-log">&gt; GRID 06: [ONLINE] - NORTH DOCK & EAST DOCK FACILITIES</div>
+                    <div class="terminal-log">&gt; SYSTEM STATUS: ALL PERIMETER FENCES ENERGIZED. NO SECURITY BREACHES DETECTED.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-start" class="section-container bg-darker">
+            <div class="section-header">
+                <span class="tag">// TIMELINE_ARCHIVE</span>
+                <h2>HOW IT STARTED (1984-1993)</h2>
+                <div class="retro-line"></div>
+            </div>
+
+            <div class="retro-timeline">
+                <div class="timeline-box">
+                    <div class="timeline-img-frame">
+                        <img src="img/default.png" alt="Amber Discovery" class="timeline-img">
+                    </div>
+                    <div class="timeline-text">
+                        <span class="year-badge">1984</span>
+                        <h3>AMBER EXTRACTION</h3>
+                        <p class="mono-text">Fossilized amber containing prehistoric mosquito blood discovered in Dominican mines by InGen field team.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-box">
+                    <div class="timeline-img-frame">
+                        <img src="img/default.png" alt="Gene Splicing" class="timeline-img">
+                    </div>
+                    <div class="timeline-text">
+                        <span class="year-badge">1989</span>
+                        <h3>GENE SPLICING</h3>
+                        <p class="mono-text">Complete genome sequences assembled using frog DNA bridges inside Isla Sorna research facilities.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-box">
+                    <div class="timeline-img-frame">
+                        <img src="img/default.png" alt="Island Construction" class="timeline-img">
+                    </div>
+                    <div class="timeline-text">
+                        <span class="year-badge">1991</span>
+                        <h3>ISLAND INFRASTRUCTURE</h3>
+                        <p class="mono-text">Construction of Visitor Center, geothermal power plant, and 10,000V electric perimeter grids completed.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-box">
+                    <div class="timeline-img-frame">
+                        <img src="img/default.png" alt="Park Launch" class="timeline-img">
+                    </div>
+                    <div class="timeline-text">
+                        <span class="year-badge">1993</span>
+                        <h3>THE GATES OPEN</h3>
+                        <p class="mono-text">Founder John Hammond announces completion of Isla Nublar safari preserve. "Welcome to Jurassic Park."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="retro-footer">
+            <div class="footer-sponsor">
+                <span class="sponsor-tag">[ SPONSORED BY ]</span>
+                <img src="img/InGen_Logo_1997.webp" alt="InGen logo" class="sponsor-logo">
+            </div>
+            <div class="footer-text">
+                <p>CREATED BY <strong>RAJA ZHAFAR AKBAR RANGKUTY</strong> | 20240140123</p>
+                <p>PAW PERTEMUAN 3 - RETRO 1993 JURASSIC PARK SYSTEM</p>
+                <p>&copy; 1993-2026 INGEN INTERNATIONAL GENETIC TECHNOLOGIES</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
