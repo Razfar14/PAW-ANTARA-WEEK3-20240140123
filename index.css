@@ -1,29 +1,29 @@
 /* ==========================================================================
-   MATTE RETRO JURASSIC PARK THEME - STYLESHEET
-   Style: Dull, Muted, Gritty Field Security Terminal (No Neon Glow)
-   Palette: Dark Charcoal, Muted Maroon Red, Muted Safari Amber
+   VINTAGE LIGHT 90s WEB THEME - JURASSIC PARK SYSTEM
+   Style: Light Off-White Background, Monochromatic & Limited Color Span, 
+          Classic Early Web Structure with Modern Responsive Layout
    ========================================================================== */
 
 :root {
-    --bg-main: #0f0f12;
-    --bg-card: #17171c;
-    --bg-darker: #0a0a0d;
-    --bg-header: #141418;
+    --bg-main: #f8f9fa;
+    --bg-card: #ffffff;
+    --bg-alt: #f1f5f9;
+    --bg-header: #ffffff;
+    --bg-terminal: #18181b;
     
     --red-primary: #991b1b;
-    --red-hover: #b91c1c;
+    --red-hover: #7f1d1d;
     --red-dark: #450a0a;
-    --red-muted: #7f1d1d;
+    --red-soft: #fef2f2;
     
-    --amber-muted: #d97706;
-    --green-muted: #15803d;
+    --amber-muted: #b45309;
+    --text-primary: #111827;
+    --text-secondary: #374151;
+    --text-muted: #6b7280;
     
-    --text-primary: #e2e8f0;
-    --text-secondary: #94a3b8;
-    --text-muted: #64748b;
-    
-    --border-red: #7f1d1d;
-    --border-dark: #27272a;
+    --border-light: #e5e7eb;
+    --border-dark: #d1d5db;
+    --border-red: #991b1b;
     
     --font-heading: 'Oswald', sans-serif;
     --font-mono: 'Share Tech Mono', monospace;
@@ -70,7 +70,7 @@ a {
     transition: var(--transition);
 }
 
-/* Muted Hazard Line */
+/* Retro Hazard Line */
 .retro-line {
     height: 3px;
     width: 100px;
@@ -79,21 +79,22 @@ a {
         90deg,
         var(--red-primary),
         var(--red-primary) 10px,
-        var(--amber-muted) 10px,
-        var(--amber-muted) 20px
+        #18181b 10px,
+        #18181b 20px
     );
 }
 
 .tag {
     font-family: var(--font-mono);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: var(--red-primary);
     letter-spacing: 1.5px;
     display: inline-block;
+    font-weight: 700;
 }
 
 .blink {
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 /* ==========================================================================
@@ -106,7 +107,8 @@ a {
     width: 100%;
     z-index: 1000;
     background-color: var(--bg-header);
-    border-bottom: 2px solid var(--border-red);
+    border-bottom: 3px solid var(--red-primary);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .nav-container {
@@ -127,14 +129,13 @@ a {
 .nav-logo {
     height: 42px;
     width: auto;
-    border: 1px solid var(--border-red);
+    border: 1px solid var(--border-dark);
     padding: 2px;
-    background: #000;
-    opacity: 0.9;
+    background: #ffffff;
 }
 
 .nav-logo:hover {
-    border-color: var(--amber-muted);
+    border-color: var(--red-primary);
 }
 
 .retro-title-box {
@@ -153,7 +154,7 @@ a {
 .system-tag {
     font-family: var(--font-mono);
     font-size: 0.85rem;
-    color: var(--amber-muted);
+    color: var(--red-primary);
 }
 
 .nav-menu {
@@ -166,22 +167,22 @@ a {
     font-family: var(--font-mono);
     font-size: 0.95rem;
     font-weight: 700;
-    color: var(--text-secondary);
-    padding: 4px 8px;
+    color: var(--text-primary);
+    padding: 4px 10px;
     border: 1px solid transparent;
 }
 
 .nav-menu a:hover {
-    color: #fff;
-    background-color: var(--red-dark);
-    border-color: var(--border-red);
+    color: #ffffff;
+    background-color: var(--red-primary);
+    border-color: var(--red-primary);
 }
 
 /* ==========================================================================
    HERO SECTION (#hero)
    ========================================================================== */
 #hero {
-    min-height: 100vh;
+    min-height: 90vh;
     padding-top: 110px;
     display: flex;
     flex-direction: column;
@@ -197,16 +198,17 @@ a {
 .terminal-header-bar {
     width: 90%;
     max-width: 800px;
-    background-color: #141418;
-    border: 1px solid var(--border-red);
-    border-bottom: none;
+    background-color: var(--bg-alt);
+    border: 1px solid var(--border-dark);
+    border-bottom: 2px solid var(--red-primary);
     padding: 6px 14px;
     display: flex;
     align-items: center;
     gap: 8px;
     font-family: var(--font-mono);
     font-size: 0.9rem;
-    color: var(--text-muted);
+    color: var(--text-primary);
+    font-weight: 700;
 }
 
 .terminal-dot {
@@ -218,7 +220,7 @@ a {
 
 .red-dot { background-color: var(--red-primary); }
 .yellow-dot { background-color: var(--amber-muted); }
-.green-dot { background-color: var(--green-muted); }
+.green-dot { background-color: #16a34a; }
 
 .terminal-title {
     margin-left: 10px;
@@ -230,9 +232,10 @@ a {
 }
 
 .retro-img-frame {
-    background-color: #000;
+    background-color: #ffffff;
     padding: 10px;
-    border: 2px solid var(--border-red);
+    border: 2px solid var(--red-primary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     display: inline-block;
 }
 
@@ -240,7 +243,6 @@ a {
     max-width: 240px;
     height: auto;
     display: block;
-    opacity: 0.9;
 }
 
 .hero-content {
@@ -251,13 +253,14 @@ a {
 .blink-tag {
     font-family: var(--font-mono);
     font-size: 0.9rem;
-    color: var(--amber-muted);
-    background-color: rgba(69, 10, 10, 0.5);
-    border: 1px solid var(--border-red);
+    color: var(--red-primary);
+    background-color: var(--red-soft);
+    border: 1px solid var(--red-primary);
     padding: 4px 14px;
     display: inline-block;
     margin-bottom: 1.2rem;
     letter-spacing: 1.5px;
+    font-weight: 700;
 }
 
 .hero-title {
@@ -296,7 +299,7 @@ a {
 
 .btn-primary {
     background-color: var(--red-primary);
-    color: #fff;
+    color: #ffffff;
     border: 1px solid var(--red-primary);
 }
 
@@ -306,13 +309,14 @@ a {
 }
 
 .btn-outline {
-    background-color: transparent;
+    background-color: #ffffff;
     color: var(--text-primary);
-    border: 1px solid var(--border-red);
+    border: 1px solid var(--border-dark);
 }
 
 .btn-outline:hover {
-    background-color: var(--red-dark);
+    background-color: var(--red-primary);
+    color: #ffffff;
     border-color: var(--red-primary);
 }
 
@@ -326,7 +330,7 @@ a {
 }
 
 .bg-darker {
-    background-color: var(--bg-darker);
+    background-color: var(--bg-alt);
     border-top: 1px solid var(--border-dark);
     border-bottom: 1px solid var(--border-dark);
 }
@@ -345,23 +349,24 @@ a {
 /* Retro Window Widget */
 .retro-window {
     background-color: var(--bg-card);
-    border: 1px solid var(--border-red);
+    border: 2px solid var(--red-primary);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .window-titlebar {
-    background-color: var(--red-dark);
-    color: var(--text-primary);
+    background-color: var(--red-primary);
+    color: #ffffff;
     padding: 8px 16px;
     font-family: var(--font-mono);
     font-size: 0.95rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--border-red);
+    font-weight: 700;
 }
 
 .window-controls {
-    color: var(--amber-muted);
+    color: #ffffff;
     cursor: pointer;
     font-weight: 700;
 }
@@ -402,8 +407,9 @@ a {
 .stat-number {
     font-family: var(--font-heading);
     font-size: 1.6rem;
-    color: var(--amber-muted);
+    color: var(--red-primary);
     display: block;
+    font-weight: 700;
 }
 
 .stat-label {
@@ -419,8 +425,8 @@ a {
 }
 
 .retro-frame {
-    background-color: #000;
-    border: 1px solid var(--border-red);
+    background-color: #ffffff;
+    border: 1px solid var(--border-dark);
     padding: 10px;
     text-align: center;
 }
@@ -429,7 +435,6 @@ a {
     max-width: 100%;
     height: auto;
     display: block;
-    opacity: 0.9;
 }
 
 .frame-label {
@@ -439,7 +444,7 @@ a {
     margin-top: 8px;
 }
 
-/* --- Attractions Section (#atraction) --- */
+/* --- Attractions & Species Section (#dinosaur-species) --- */
 .attraction-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -453,11 +458,12 @@ a {
 }
 
 .retro-card:hover {
-    border-color: var(--border-red);
+    border-color: var(--red-primary);
+    box-shadow: 0 4px 12px rgba(153, 27, 27, 0.1);
 }
 
 .card-header {
-    background-color: #121216;
+    background-color: var(--bg-alt);
     padding: 8px 12px;
     display: flex;
     justify-content: space-between;
@@ -469,6 +475,7 @@ a {
     font-family: var(--font-mono);
     color: var(--text-muted);
     font-size: 0.85rem;
+    font-weight: 700;
 }
 
 .danger-badge {
@@ -483,7 +490,7 @@ a {
 }
 
 .card-img-wrapper {
-    background-color: #000;
+    background-color: #f3f4f6;
     padding: 20px;
     text-align: center;
     border-bottom: 1px solid var(--border-dark);
@@ -492,7 +499,6 @@ a {
 .card-img {
     max-height: 150px;
     width: auto;
-    opacity: 0.9;
 }
 
 .card-body {
@@ -507,7 +513,19 @@ a {
 
 .card-body p {
     font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.dino-specs {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--red-primary);
+    border-top: 1px dashed var(--border-dark);
+    border-bottom: 1px dashed var(--border-dark);
+    padding: 6px 0;
     margin-bottom: 1.2rem;
+    letter-spacing: 0.5px;
+    font-weight: 700;
 }
 
 .retro-btn-sm {
@@ -518,29 +536,32 @@ a {
     border: 1px solid var(--border-red);
     padding: 4px 10px;
     letter-spacing: 1px;
+    font-weight: 700;
 }
 
 .retro-btn-sm:hover {
-    background-color: var(--red-dark);
-    color: #fff;
+    background-color: var(--red-primary);
+    color: #ffffff;
 }
 
 /* --- Map Section (#map) --- */
 .retro-map-box {
-    background-color: #000;
-    border: 2px solid var(--border-red);
+    background-color: #ffffff;
+    border: 2px solid var(--red-primary);
     padding: 2rem;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.8rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .map-img-container {
     position: relative;
     padding: 12px;
     border: 1px solid var(--border-dark);
+    background-color: #f8f9fa;
 }
 
 .map-img {
@@ -549,31 +570,35 @@ a {
     height: auto;
     display: block;
     border-radius: 4px;
-    opacity: 0.95;
 }
 
 .retro-terminal-status {
     width: 100%;
     max-width: 600px;
-    background-color: #0a0a0e;
+    background-color: var(--bg-alt);
     border: 1px solid var(--border-dark);
+    border-left: 3px solid var(--red-primary);
     padding: 1.2rem;
     font-family: var(--font-mono);
     font-size: 0.9rem;
     text-align: left;
+    color: var(--text-primary);
 }
 
 .terminal-log {
-    color: var(--text-secondary);
+    color: #15803d;
     margin-bottom: 6px;
+    font-weight: 700;
 }
 
 .terminal-log.alert-log {
     color: var(--red-primary);
+    font-weight: 700;
 }
 
 .terminal-log.info-log {
     color: var(--amber-muted);
+    font-weight: 700;
 }
 
 /* --- Timeline Section (#how-it-start) --- */
@@ -592,12 +617,13 @@ a {
 }
 
 .timeline-box:hover {
-    border-color: var(--border-red);
+    border-color: var(--red-primary);
+    box-shadow: 0 4px 12px rgba(153, 27, 27, 0.08);
 }
 
 .timeline-img-frame {
-    background-color: #000;
-    border: 1px solid var(--border-red);
+    background-color: #ffffff;
+    border: 1px solid var(--border-dark);
     padding: 8px;
     display: inline-block;
     margin-bottom: 1rem;
@@ -607,18 +633,17 @@ a {
     width: 70px;
     height: 70px;
     object-fit: contain;
-    opacity: 0.9;
 }
 
 .year-badge {
     font-family: var(--font-mono);
     font-size: 1rem;
-    background-color: var(--red-dark);
-    color: var(--text-primary);
-    border: 1px solid var(--border-red);
+    background-color: var(--red-primary);
+    color: #ffffff;
     padding: 2px 10px;
     display: inline-block;
     margin-bottom: 0.8rem;
+    font-weight: 700;
 }
 
 .timeline-text h3 {
@@ -634,8 +659,8 @@ a {
    FOOTER
    ========================================================================== */
 footer {
-    background-color: var(--bg-darker);
-    border-top: 2px solid var(--border-red);
+    background-color: var(--bg-alt);
+    border-top: 3px solid var(--red-primary);
     padding: 2.5rem 2rem;
 }
 
@@ -652,29 +677,29 @@ footer {
 .sponsor-tag {
     font-family: var(--font-mono);
     font-size: 0.85rem;
-    color: var(--amber-muted);
+    color: var(--red-primary);
     display: block;
     margin-bottom: 6px;
+    font-weight: 700;
 }
 
 .sponsor-logo {
     height: 55px;
     width: auto;
-    border: 1px solid var(--border-red);
+    border: 1px solid var(--border-dark);
     padding: 4px;
-    background-color: #000;
-    opacity: 0.9;
+    background-color: #ffffff;
 }
 
 .footer-text p {
     font-family: var(--font-mono);
     font-size: 0.85rem;
-    color: var(--text-muted);
+    color: var(--text-secondary);
     margin-bottom: 0.3rem;
 }
 
 .footer-text strong {
-    color: var(--text-secondary);
+    color: var(--text-primary);
 }
 
 /* ==========================================================================
@@ -709,6 +734,6 @@ footer {
         flex-direction: column;
     }
     .retro-stat-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
